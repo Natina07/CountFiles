@@ -5,7 +5,7 @@ pipeline {
         stage('Run Script') {
             steps {
                 git branch: 'main', url: 'https://github.com/Natina07/CountFiles.git'
-                sh '/root/scripts/CountFiles/count.sh'
+                sh '/root/CountFiles/count.sh'
             }
         }
     }
